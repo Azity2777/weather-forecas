@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Hiệu ứng hover khi con trỏ di chuyển qua */
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Dark mode */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Light mode */
+.light-mode {
+  background-color: #fff;
+  color: #333;
+  
+}
+
+
+
+/* CSS cho các phần khác của ứng dụng */
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ... */
+.weather-section {
+  margin-top: 20px; /* Điều chỉnh khoảng cách giữa phần tử này và phần trước nó */
+  /* Thêm các thuộc tính CSS khác để tùy chỉnh vị trí và giao diện của phần tử này */
+}
+/* Định nghĩa các lớp CSS cho các trạng thái thời tiết khác nhau */
+.weather-sunny {
+  background-image: url('sunny-background.jpg') ;
+  background-size: cover;
+  /* Đặt hình nền cho trạng thái nắng */
+}
+
+
+/* Nút chuyển đổi Dark/Light mode */
+.dark-mode-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+/* CSS */
+
+
+.header{
+    display: flex;
+    justify-content: space-between; /* Để đảm bảo hai phần tử đối diện nhau */
+    align-items: center; /* Để căn giữa theo chiều dọc */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

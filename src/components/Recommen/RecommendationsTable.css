@@ -1,0 +1,33 @@
+/* CSS cho phần Đề suất */
+.recommendations {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recommendations h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .recommendations p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  /* CSS cho đề suất cụ thể */
+  .recommendations p.suggestion {
+    font-weight: bold;
+    color: #007bff; /* Màu xanh cho đề suất */
+  }
+  
+  /* CSS cho trường hợp không có đề suất cụ thể */
+  .recommendations p.no-suggestion {
+    font-style: italic;
+    color: #888;
+  }
+  

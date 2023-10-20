@@ -1,10 +1,52 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: aliceblue;
+  background: url('sunny-background.jpg') no-repeat;
+  background-size: cover; /* Để ảnh nền phủ kín toàn bộ màn hình */
+  height: 100vh; /* Đảm bảo nền kéo dài theo chiều cao của màn hình */
+  margin: 0;
+  padding: 0;
+}
+.banner
+{
+  background: url('sunny-background.jpg') no-repeat;
+}
+.banner .clouds
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.banner .clouds img
+{
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  animation: animate calc(8s * var(--i)) linear infinite;
+}
+@keyframes animate
+{
+  0%
+  {
+    transform: translateX(-100%);
+  }
+  100%
+  {
+    transform: translateX(100%);
+  }
+}
+a:hover {
+  color: #007bff; /* Một màu xanh dương thể hiện khi di chuột qua liên kết */
+  text-decoration: underline; /* Gạch chân cho liên kết khi di chuột qua */
+}
+h1, h2, h3 {
+  font-size: 24px; /* Điều chỉnh cỡ chữ theo ý muốn */
+  color: #333; /* Màu chữ đậm hơn cho tiêu đề */
 }
 
 code {
